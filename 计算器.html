@@ -1,0 +1,38 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <input id="display" style="height: 50px;width: 200px;background-color: black;font-size: 30px;color: white"><br>
+    <input type="button" style="height: 30px;width: 35px" value="1" onclick="my(1)">
+    <input type="button" style="height: 30px;width: 35px" value="2" onclick="my(2)">
+    <input type="button" style="height: 30px;width: 35px" value="3" onclick="my(3)">
+    <input type="button" style="height: 30px;width: 35px" value="4" onclick="my(4)">
+    <input type="button" style="height: 30px;width: 35px" value="5" onclick="my(5)"><br>
+    <input type="button" style="height: 30px;width: 35px" value="6" onclick="my(6)">
+    <input type="button" style="height: 30px;width: 35px" value="7" onclick="my(7)">
+    <input type="button" style="height: 30px;width: 35px" value="8" onclick="my(8)">
+    <input type="button" style="height: 30px;width: 35px" value="9" onclick="my(9)">
+    <input type="button" style="height: 30px;width: 35px" value="0" onclick="my(0)"><br>
+    <input type="button" style="height: 30px;width: 35px" value="+" onclick="my('+')">
+    <input type="button" style="height: 30px;width: 35px" value="-" onclick="my('-')">
+    <input type="button" style="height: 30px;width: 35px" value="*" onclick="my('*')">
+    <input type="button" style="height: 30px;width: 35px" value="/" onclick="my('/')">
+    <input type="button" style="height: 30px;width: 35px" value="=" onclick="to()"><br>
+    <input type="button" style="height: 30px;width: 35px" value="clr" onclick="cl()">
+    <script>
+        function my(c) {
+            d=document.all.display;
+            d.value=d.value+c;
+        }
+        function to(c) {
+            d=document.all.display;
+            d.value=d.value+'='+eval(d.value);
+        }
+        function cl(c) {
+            d=document.all.display;
+            d.value='';
+        }
+    </script>
+</body>
+</html>
